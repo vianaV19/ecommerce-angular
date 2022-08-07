@@ -4,14 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Features:
 
-angular material
-bootstrap
-httpclient
-@Input
-routermodel
-sass
-display flex
-backd-end com sheet-best 
+ - angular material
+ - bootstrap
+ - httpclient 
+ - @Input e @Output
+ - routermodel 
+ - sass
+ - display flex
+ - backd-end com sheet-best 
 
 ## Development server
 

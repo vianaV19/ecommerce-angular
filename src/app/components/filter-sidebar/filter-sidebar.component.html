@@ -1,0 +1,47 @@
+<div id="filter-container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Filters:
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="my-3">
+
+                    <label class="form-label" for="filter">Product Name: </label>
+
+                    <input [(ngModel)]="filterByNameTxt" class="form-control mb-3" type="text" placeholder="Product Name"
+                        aria-label="default input example" name="filter">
+
+                    <button (click)="filterByName()" mat-raised-button color="primary">Search</button>
+                </div>
+
+
+            </li>
+            <li class="list-group-item">
+                <div class="my-3">
+
+                    <div class="form-group">
+                        <label class="form-label" for="filter">De: </label>
+
+                        <input [(ngModel)]="min" class="form-control mb-3" type="number" placeholder="R$0,00"
+                            aria-label="default input example" name="filter">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="filter">Até: </label>
+
+                        <input [(ngModel)]="max" class="form-control mb-3" type="number" placeholder="R$100,00"
+                            aria-label="default input example" name="filter">
+                    </div>
+
+                    <button (click)="filterByPrice()"  mat-raised-button color="primary">Filter</button>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+
+</div>

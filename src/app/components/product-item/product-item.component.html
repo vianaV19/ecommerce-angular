@@ -1,0 +1,9 @@
+<div class="card m-0" style="width: 14rem; ">
+    <img [src]="product.imageUrl" height="222px" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="card-title">{{ product.name }}</h3>
+        <p class="card-text">{{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <button mat-raised-button>Purchase</button>
+    </div>
+</div>

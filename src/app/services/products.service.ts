@@ -14,33 +14,34 @@ export class ProductsService {
    }
   
   retrieveAll(){
-    return this.httpClient.get<Product[]>(this.base_url)
+    // return this.httpClient.get<Product[]>(this.base_url)
+    return PRODUCTS;
   }
 }
 
 //mock
-// var PRODUCTS : Product[] = [
-//   {
-//     id: 1,
-//     name: 'Sherlock Holmes',
-//     description: 'Sherlock holmes books all volumes.',
-//     price: 50.99,
-//     imageUrl: "../../assets/sherlock.jpg"
-//   },
-//   {
-//     id: 2,
-//     name: 'Mindset',
-//     description: 'Mindset, the success psychology',
-//     price: 60.99,
-//     imageUrl: "../../assets/mindset.jpg" 
-//   },
-//   {
-//     id: 3,
-//     name: 'Por que fazemos o que fazemos?',
-//     description: 'Livro sobre o propósito daquilo que fazemos.',
-//     price: 80.99,
-//     imageUrl: "../../assets/oquefazemos.jpg" 
-//   }
+var PRODUCTS : Product[] = [
+  {
+    id: 1,
+    name: 'Sherlock Holmes',
+    description: 'Sherlock holmes books all volumes.',
+    price: 50.99,
+    imageUrl: "../../assets/sherlock.jpg"
+  },
+  {
+    id: 2,
+    name: 'Mindset',
+    description: 'Mindset, the success psychology',
+    price: 60.99,
+    imageUrl: "../../assets/mindset.jpg" 
+  },
+  {
+    id: 3,
+    name: 'Por que fazemos o que fazemos?',
+    description: 'Livro sobre o propósito daquilo que fazemos.',
+    price: 80.99,
+    imageUrl: "../../assets/oquefazemos.jpg" 
+  }
   
-// ]
+]
 

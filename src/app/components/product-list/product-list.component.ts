@@ -19,11 +19,12 @@ export class ProductListComponent implements OnInit, OnChanges {
   filteredList: Product[] = []
 
   constructor(private productsService: ProductsService) {
-    productsService.retrieveAll().subscribe(data => {
-      this.productsList = data
-    } , err => {
-      console.error(err)
-    });
+    this.productsList = productsService.retrieveAll();
+    // productsService.retrieveAll().subscribe(data => {
+    //   this.productsList = data
+    // } , err => {
+    //   console.error(err)
+    // });
   }
 
   ngOnInit(): void {
@@ -40,7 +41,14 @@ export class ProductListComponent implements OnInit, OnChanges {
       this.filteredList = this.productsList.filter((e) => e.price <= max && e.price >= min)
     } else {
 
-      this.filteredList = this.productsList.filter((e) => e.name.indexOf(this.filterByName?.byName!) != -1)
+      console.log(this.filterByName?.byName)
+
+      //fln abreviation of "filter name"
+      const fn = this.filterByName?.byName?.toLowerCase();
+
+      if (fn != "" && fn != null) {
+        this.filteredList = this.productsList.filter((e) => e.name.toLowerCase().includes(fn))
+      }
     }
   }
 }

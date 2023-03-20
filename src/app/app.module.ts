@@ -15,6 +15,8 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 import { ProductsService } from './services/products.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     FilterSidebarComponent,
     AboutComponent,
     ProductListComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    FooterComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,

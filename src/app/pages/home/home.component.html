@@ -1,10 +1,13 @@
 <div class="row">
+    <div>
+        <h1>
+            Wellcome to Ocean
+        </h1>
+        <h2>
+            The place where E-books gain life!
+        </h2>
+        
+        <button mat-stroked-button color="primary" [routerLink]="'/catalogo'">Access Store <mat-icon aria-hidden="false" aria-label="arrow" fontIcon="arrow_right_alt"></mat-icon></button>
+    </div>
     
-    <div class="col-4">
-        <ecommerce-filter-sidebar (filterByPriceEvent)="filterByPrice($event)" (filterByNameEvent)="filterByName($event)" ></ecommerce-filter-sidebar>
-    </div>
-
-    <div class="col-8">
-        <ecommerce-product-list  [filterByPrice]="priceFilter" [filterByName]="nameFilter" ></ecommerce-product-list>
-    </div>
 </div>

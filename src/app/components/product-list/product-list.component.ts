@@ -46,7 +46,7 @@ export class ProductListComponent implements OnInit, OnChanges {
       //fln abreviation of "filter name"
       const fn = this.filterByName?.byName?.toLowerCase();
 
-      if (fn != "" && fn != null) {
+      if (fn?.trim() != "" && fn != null) {
         this.filteredList = this.productsList.filter((e) => e.name.toLowerCase().includes(fn))
       }
     }

@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { HomeComponent } from './pages/home/home.component';
-import { FilterSidebarComponent } from './components/filter-sidebar/filter-sidebar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AboutComponent } from './pages/about/about.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
@@ -17,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
+import { FilterSidebarComponent } from './components/filter-sidebar/filter-sidebar.component';
 
 
 @NgModule({
@@ -24,11 +24,11 @@ import { CatalogoComponent } from './pages/catalogo/catalogo.component';
     AppComponent,
     TopnavComponent,
     HomeComponent,
-    FilterSidebarComponent,
     AboutComponent,
+    FooterComponent,
+    FilterSidebarComponent,
     ProductListComponent,
     ProductItemComponent,
-    FooterComponent,
     CatalogoComponent
   ],
   imports: [
